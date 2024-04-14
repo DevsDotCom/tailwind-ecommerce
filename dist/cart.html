@@ -198,136 +198,20 @@
     </div>
     <!--breadcrums end  -->
 
-    <!-- Account wrapper -->
-    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
-      <!-- sidebar -->
-      <div class="col-span-3">
-        <!-- account profile -->
-        <div class="px-4 py-3 shadow flex items-center gap-4">
-          <div class="flex-shrink-0">
-            <img
-              src="../images/avatar.png"
-              class="rounded-full w-14 h-14 border border-gray-200 p-1 object-cover"
-            />
-          </div>
-          <div class="flex-grow">
-            <p class="text-gray-600">Hello</p>
-            <h4 class="text-gray-800 font-medium">Russell Ahmed</h4>
-          </div>
+    <!-- cart wrapper -->
+    <div class="container lg:grid grid-cols-12 gap-6 items-start pb-16 pt-4">
+      <!-- cart list -->
+      <div class="xl:col-span-9 lg:col-span-8">
+        <!-- cart title -->
+        <div class="bg-gray-200 py-2 pl-12 pr-20 xl:pr-28 mb-4 hidden md:flex">
+          <p class="text-gray-600 text-center">Product</p>
+          <p class="text-gray-600 text-center ml-auto mr-16 xl:mr-24">
+            Quantity
+          </p>
+          <p class="text-gray-600 text-center">Total</p>
         </div>
-        <!-- account profile end-->
+        <!-- cart title end -->
 
-        <!-- profile link-->
-        <div
-          class="mt-6 bg-white shadow rounded p-4 divide-y devide-gray-200 space-y-4 text-gray-600"
-        >
-          <!-- single link -->
-          <div class="space-y-1 pl-8">
-            <a
-              href="account.html"
-              class="relative text-primary hover:text-primary transition block font-medium capitalize"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="ri-id-card-line"></i>
-              </span>
-              Manage account
-            </a>
-            <a href="#" class="relative hover:text-primary tran capitalize">
-              Profile info
-            </a>
-            <a href="#" class="relative hover:text-primary tran capitalize">
-              Manage Address
-            </a>
-            <a href="#" class="relative hover:text-primary tran capitalize">
-              Change Password
-            </a>
-          </div>
-          <!-- single link end -->
-          <!-- single link -->
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="account.html"
-              class="relative text-gray-800 hover:text-primary transition block font-medium capitalize"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="ri-home-3-fill"></i>
-              </span>
-              My order History
-            </a>
-            <a
-              href="#"
-              class="relative hover:text-primary transition block capitalize"
-            >
-              My Returns
-            </a>
-            <a
-              href="#"
-              class="relative hover:text-primary transition block capitalize"
-            >
-              My Concellrator
-            </a>
-            <a
-              href="#"
-              class="relative hover:text-primary transition block capitalize"
-            >
-              My Reviews
-            </a>
-          </div>
-
-          <!-- single link end -->
-
-          <!-- single link -->
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="account.html"
-              class="relative text-gray-800 hover:text-primary transition block font-medium capitalize"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="ri-money-dollar-box-line"></i>
-              </span>
-              Payment Methods
-            </a>
-            <a
-              href="#"
-              class="relative hover:text-primary transition block capitalize"
-            >
-              Voucher
-            </a>
-          </div>
-          <!-- single link end -->
-          <!-- single link -->
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="account.html"
-              class="relative text-gray-800 hover:text-primary transition block font-medium capitalize"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="ri-heart-line"></i>
-              </span>
-              My Wishlist
-            </a>
-          </div>
-          <!-- single link end -->
-          <!-- single link -->
-          <div class="space-y-1 pl-8 pt-4">
-            <a
-              href="account.html"
-              class="relative text-gray-800 hover:text-primary transition block font-medium capitalize"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="ri-logout-box-r-line"></i>
-              </span>
-              Logout
-            </a>
-          </div>
-          <!-- single link end -->
-        </div>
-        <!-- profile link end-->
-      </div>
-      <!-- sidebar end-->
-
-      <!-- wish list -->
-      <div class="col-span-9 space-y-4">
         <!-- single wishlist -->
         <div
           class="flex items-center justify-between gap-6 p-4 border border-gray-200 rounded"
@@ -349,11 +233,28 @@
           </div>
           <!-- wishlist content end-->
           <div class="text-primary text-lg font-semibold">$320</div>
-          <a
-            href="#"
-            class="px-6 py-2 text-center text-sm text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium"
-            >Add to cart</a
-          >
+
+          <!-- Quantity -->
+          <div class="mt-4">
+            <div
+              class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max"
+            >
+              <div
+                class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"
+              >
+                -
+              </div>
+              <div class="h-8 w-8 text-base flex items-center justify-center">
+                4
+              </div>
+              <div
+                class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"
+              >
+                +
+              </div>
+            </div>
+          </div>
+          <!-- Quantity end-->
           <div class="text-gray-600 cursor-pointer hover:text-primary">
             <i class="ri-delete-bin-fill"></i>
           </div>
@@ -366,7 +267,7 @@
         >
           <!-- wishlist image -->
           <div class="w-28 flex-shrink-0">
-            <img src="../images/products/product5.jpg" class="w-full" />
+            <img src="../images/products/product9.jpg" class="w-full" />
           </div>
           <!-- wishlist image end-->
 
@@ -376,23 +277,86 @@
               Italian l shape sofa
             </h2>
             <p class="text-gray-500 text-sm">
-              Availability: <span class="text-red-500">Out of stock</span>
+              Availability: <span class="text-green-600">In Stock</span>
             </p>
           </div>
           <!-- wishlist content end-->
           <div class="text-primary text-lg font-semibold">$320</div>
-          <a
-            href="#"
-            class="cursor-not-allowed px-6 py-2 text-center text-sm text-white bg-red-400 border border-red-400 rounded transition uppercase font-roboto font-medium"
-            >Add to cart</a
-          >
+
+          <!-- Quantity -->
+          <div class="mt-4">
+            <div
+              class="flex border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max"
+            >
+              <div
+                class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"
+              >
+                -
+              </div>
+              <div class="h-8 w-8 text-base flex items-center justify-center">
+                4
+              </div>
+              <div
+                class="h-8 w-8 text-xl flex items-center justify-center cursor-pointer select-none"
+              >
+                +
+              </div>
+            </div>
+          </div>
+          <!-- Quantity end-->
           <div class="text-gray-600 cursor-pointer hover:text-primary">
             <i class="ri-delete-bin-fill"></i>
           </div>
         </div>
         <!-- single wishlist end-->
       </div>
-      <!-- wish list end-->
+      <!-- cart list end-->
+
+      <!-- order summary -->
+      <div
+        class="col-span-3 space-y-4 border border-gray-200 px-4 py-4 rounder"
+      >
+        <h4 class="text-gray-600 uppercase text-xl font-medium">
+          order summary
+        </h4>
+        <div class="space-y-3 pb-2">
+          <div class="text-gray-600 text-base flex justify-between capitalize">
+            <p>subtotal</p>
+            <p>$320</p>
+          </div>
+          <div class="text-gray-600 text-base flex justify-between capitalize">
+            <p>Delivery</p>
+            <p>Free</p>
+          </div>
+          <div class="text-gray-600 text-base flex justify-between capitalize">
+            <p>tax</p>
+            <p>Free</p>
+          </div>
+          <div class="border border-gray-200"></div>
+        </div>
+        <div class="flex justify-between">
+          <p class="font-medium text=gray-800 uppercase">total</p>
+          <p class="font-medium text=gray-800">$320</p>
+        </div>
+        <div class="flex mb-4">
+          <input
+            type="text"
+            placeholder="Coupon"
+            class="w-full rounded-l-md border border-primary"
+          />
+          <button
+            class="w-2/5 h-12 font-medium rounded-r-md text-white bg-primary border hover:bg-transparent hover:text-primary hover:border border-primary"
+          >
+            Apply
+          </button>
+        </div>
+        <button
+          class="w-full h-12 font-medium rounded-md text-white bg-primary border hover:bg-transparent hover:text-primary hover:border border-primary"
+        >
+          process to checkout
+        </button>
+      </div>
+      <!-- order summary end-->
     </div>
     <!-- Account wrapper end-->
 
